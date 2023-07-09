@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1"
+  <title></title>
+  <style>
+      .bg{
+          background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV8vogQq1MnyIjQkDzjMxBMUqAMBNeRSPGBQ&usqp=CAU');
+          background-repeat:no-repeat;
+          background-size:cover;
+      }
+      .header{
+      background-color:grey;
+      color:black;
+      text-align: center;
+      padding: 10px;
+      font-family:Fantasy;
+    }
+    .top {
+      font-family:monospace;
+      color: white;
+    }
+    
+    .top a {
+      float:left;
+      display:block;
+      color:white;
+      padding:10px;
+     
+      }
+    .top a:hover {
+      background-color:black;
+      color:white;
+    
+
+    }
+    .form{
+      height:325px;
+      width:40%;
+      background-color:silver;
+      float:center;
+      padding:100px;
+      
+      
+      
+    }
+    a{
+        text-decoration:none;
+    }
+      
+  </style>
+  <script>
+    function validate()
+    {
+        var name=document.form1.name.value;
+        var password=document.form1.password.value;
+        if(name==null || name=="")
+        {
+            alert("UserName must be filled");
+            return false;
+        }
+        else if(password.length<9){
+            alert("Password must be at least 8 characters long");
+            return false;
+        }
+    }
+</script>
+
+</head>
+<body class="bg">
+    <div class="header">
+     <h1 style="background-color: whitesmoke;">Registration Form</h1>
+    </div>
+    <div class="top">
+    <a href="file:///C:/Users/Athira/new.html" >Back</a>
+    </div><br><br><br>
+    <center>
+    <div class="form">
+    <form>
+      <label> First Name:</label>
+      <input type="name" required><br><br>
+      <label> Last Name:</label>
+      <input type="name"required><br><br>
+      <label> Contact No:</label>
+      <input type="number" required><br><br>
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail ID:</label>
+      <input type="email" required><br><br>
+      <label style="padding: auto;margin:auto;">&nbsp;&nbsp;&nbsp;&nbsp;&nbspGender:</label>&nbsp;&nbsp;&nbsp;
+      <label>Male</label>
+      <input type="radio"name="gender"/>
+      <label>Female</label>
+      <input type="radio"name="gender"/>
+      <label>Others</label>
+      <input type="radio"name="gender"/><br><br>
+      <label>Date Of Birth:</label>
+      <input type="date"/><br><br>
+      <label style="padding:25px;margin:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ID Proof:</label>
+      <input type="file"/><br><br>
+      <label>Select Your Area:</label>
+      <select>
+        <option>Acting</option>
+        <option>Direction</option>
+        <option>Playback singing</option>
+        <option>Choreography</option>
+        <option>Dubbing</option>
+        <option>Cinematography</option>
+        <option>Stunt Cooradination</option>
+        <option>Music Composition</option>
+      
+        
+        
+        </select><br><br><br><br>
+<input type="SUBMIT"/>
+
+      
+
+
+
+
+      </div>
+      
+
+      
+      
+      </form>
+      </center>
+</body>
+</html>
